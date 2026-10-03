@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
     <title>Julia Russo Portfolio</title>
 </head>
 
 <body>
-    //Navbar
-    <ul>
+    
+    <ul class="navbar">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <h1>Welcome to my portfolio! Here you can learn more about me and my projects.</h1>
+    <h1 class="heading">Welcome to my portfolio! Here you can learn more about me and my projects.</h1>
     <section class="about" id="about">
 
         <h2 class="about_heading">About</h2>
@@ -26,6 +29,10 @@
 
         <div class="skills">
             <div class="skills_row">
+                <h2 class="skills_heading">Skills</h2>
+            </div>
+            <div class="skills_row">
+                
                 <div class="skills_item" id="skills_item_html">
                     <img src="skills_images/html_icon.png" alt>
                     <div class="skills_item_name">HTML</div>
@@ -37,13 +44,13 @@
                 </div>
 
                 <div class="skills_item" id="skills_item_javascript">
-                    <img src="skills_images/javascript_icon.png" alt>
+                    <img src="skills_images/js_icon.png" alt>
                     <div class="skills_item_name">JAVASCRIPT</div>
                 </div>
             </div>
             <div class="skills_row">
                 <div class="skills_item" id="skills_item_nodejs">
-                    <img src="skills_images/nodejs_icon.png" alt>
+                    <img src="skills_images/node.js_icon.png" alt>
                     <div class="skills_item_name">NODE.JS</div>
                 </div>
                 <div class="skills_item" id="skills_item_python">
@@ -58,17 +65,18 @@
         </div>
 
 
-        <p>I apply what I have learned to the Epic Lab that I am involved with here at OSU. I assist PhD students
+        <p>I apply what I have learned to the Epic Lab that I am involved with here at OSU. In this research lab I assist PhD students
         with their research. I have learned many things during my time with the lab, such as reading 
-        research papers to find helpful information to go forward with their research, 
-        being a backup to run research studies, </p>
+        research papers to find helpful information to go forward with their research,
+        search for participants to participate in their studies, and 
+        being a backup to run research studies </p>
     </section>
 
+    <section class="projects" id="projects">
+    <h2 class="projects_heading">Projects:</h2>
 
-    <h2>Projects:</h2>
-
-    <video width="640" height="360" controls poster="chess_thumbnail.png">
-        <source src="chess.mp4" type="video/mp4">
+    <video width="640" height="360" controls>
+        <source src="3dchess.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
     <p>
@@ -78,6 +86,14 @@
         always on the same page and met deadlines and met our goals. 
     </p>
 
-    <h2>Contact:</h2>
-    <p>You can contact me at julia.mahealani@gmail.com</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact:</h2>
+        <p>You can contact me at julia.mahealani@gmail.com</p>
+        <div class="contact_links">
+            <a href="www.linkedin.com/in/julia-mahealani-russo"><img src="contact_images/linkedin_icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/juliar808"><img src="contact_images/github_icon.png" alt="GitHub"></a>
+        </div>
+    </section>
 </body>
